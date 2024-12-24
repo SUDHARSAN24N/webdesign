@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>HOw to create an Html element using jquery?</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$(".append").append('<div class="added">New HTML Element added</div>');
+});
+});
+</script>
+<style>
+.added{
+padding:20px;
+margin-top:20px;
+background:rgb(250,32,134);
+color:whtie;
+display:inline-block;
+}
+</style>
+</head>
+<body>
+<center>
+<h1 style="color.rgb(159,13,243):">welcome</h1>
+<h3>create an HTML element using jQuery</h3>
+<button id="append">Append new HTML Element</button>
+<div class="append"></div>
+</center>
+</body>
+</html>
