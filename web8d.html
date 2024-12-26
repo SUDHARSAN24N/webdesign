@@ -1,25 +1,24 @@
 <html>
-    <head>
-        <title>Event Handling</title>
-    </head>
-    <body>
+<head>
+<title>Event Handling</title>
+</head>
+<body>
         <h1>Event Handling Example</h1>
-        <p id="mo">moves</p>
+        <p id="mouseEventParagraph">Move your mouse over this paragraph</p>
         <form id="exampleForm">
             <label for="inputText">Enter Text:</label>
             <input type="text" id="inputText" name="inputText" required>
             <button type="submit">Submit</button>
         </form>
 <script>
-var element=document.getElementById("mo");
-element.addEventListener("mouseover",function()
+document.getElementById("mouseEventParagraph").addEventListener("mouseover",function()
 	{
-		element.innerHTML="mouseover event triggered!";
+		this.innerHTML="mouseover event triggered!";
 	});
-element.addEventListener("mouseout",function()
-    {
-        element.innerHTML="moves your paragaraph";
+document.getElementById("mouseEventParagraph").addEventListener("mouseout",function(){
+this.innerHTML="Move your mouse over this paragraph";
 	});
+
 </script>
 <script>
 document.getElementById("exampleForm").addEventListener("submit",function(event){
